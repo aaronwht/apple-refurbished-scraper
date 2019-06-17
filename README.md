@@ -6,4 +6,4 @@ You'll need an environment variable named `PhoneNumber` in AWS Lambda for this s
 
 [![Text Message](https://www.aaronwht.com/images/apple-refurbished-scraper/apple-refurbished-scraper.png)
 
-[![Specify Your Phone Number](https://www.aaronwht.com/images/apple-refurbished-scraper/apple-refurbished-scraper-env-var.png)
+[![Specify Your Phone Number](https://www.aaronwht.com/images/apple-refurbished-scraper/apple-refurbished-env-var.png)
