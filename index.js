@@ -3,18 +3,8 @@ const AWS = require('aws-sdk')
 const sns = new AWS.SNS()
 const request = require('request')
 const url = 'https://www.apple.com/shop/refurbished/mac/256gb-macbook-pro-16gb'
-const moment = require('moment-timezone')
 
 module.exports.handler = (event, context) => {
-    // moment().tz("America/Los_Angeles").format()
-
-    const currentTime = moment(new Date()).tz('America/Los_Angeles')
-    const startTime = moment(new Date()).tz('America/Los_Angeles').set({ hour: 7, minute: 30 })
-    const endTime = moment(new Date()).tz('America/Los_Angeles').set({ hour: 22, minute: 0 })
-
-    // const validRunTime = (currentTime.isAfter(startTime) && currentTime.isBefore(endTime))
-    // if (!validRunTime) return context.succeed(`Request isn't with scheduled run times`)
-
     let response = ''
 
     request(url, (err, resp, html) => {
