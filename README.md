@@ -1,4 +1,4 @@
-### Use AWS Lambda to scrape Apple's Refurbished Page and send a phone number a text message including the product URL.
+### Scrape Apple's Refurbished Page using Lambda
 
 Scrapes the Apple Refurbished page and sends a text message when specified conditions are satisfied.
 
